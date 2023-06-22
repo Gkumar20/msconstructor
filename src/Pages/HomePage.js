@@ -32,10 +32,19 @@ const HomePage = () => {
     ];
     return (
         <div className="bg-gray-100">
-            <header className="bg-gray-900 py-12 sm:py-10 min-h-screen">
-                <div className="container mx-auto my-10 px-4 ">
+
+            <header className="relative bg-gray-900 py-12 sm:py-10 min-h-screen">
+                <div
+                    className="absolute top-0 left-0 w-full h-full opacity-50 bg-cover bg-no-repeat"
+                    style={{
+                        backgroundImage: `url('https://wallsanddreams.com/images/testimonial-bg.jpg')`
+                    }}
+                />
+
+                <div className="container relative mx-auto my-10 px-4">
+
                     <img
-                        className=" bg-gradient-to-b from-blue-900 via-white to-green-900 rounded-full w-16 mr-2 mx-10"
+                        className="bg-gradient-to-b from-blue-900 via-white to-green-900 rounded-full w-16 mr-2 mx-10"
                         src="MSlogo.png"
                         alt="Logo"
                     />
@@ -43,20 +52,15 @@ const HomePage = () => {
                         MS Contructor
                     </span>
 
-                    <div className='mx-10 my-10 flex justify-center'>
+                    <div className="mx-10 my-10 flex justify-center">
                         <div>
                             <h1 className="text-white text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
                                 Welcome to MS Construction & Supplier
                             </h1>
                             <div className="text-gray-300 text-lg sm:text-xl md:text-2xl mb-8">
-                                <p>
-                                    We Build Your Dream!
-                                </p>
-                                <p>
-                                    Get Your Dream Home In Low Budget.
-                                </p>
+                                <p>We Build Your Dream!</p>
+                                <p>Get Your Dream Home In Low Budget.</p>
                             </div>
-
                         </div>
                     </div>
 
@@ -67,68 +71,21 @@ const HomePage = () => {
                             </button>
                         </Link>
                     </div>
-                    <section className=" bg-gray-900  py-3 my-3">
-                        <div className="container mx-auto ">
 
+                    <section className="bg-gray-900 py-3 my-3">
+                        <div className="container mx-auto">
                             <div className="grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-3 gap-8">
                                 {properties.map((property) => (
                                     <PropertyCard key={property.id} property={property} />
                                 ))}
+
                             </div>
                         </div>
                     </section>
+
                 </div>
             </header>
-            {/* <header className="relative bg-gray-900 py-12 sm:py-10 min-h-screen">
-                <div className="container mx-auto my-10 px-4">
-                    <div className="container mx-auto my-10 px-4 ">
-                        <img
-                            className=" bg-gradient-to-b from-blue-900 via-white to-green-900 rounded-full w-16 mr-2 mx-10"
-                            src="MSlogo.png"
-                            alt="Logo"
-                        />
-                        <p className="text-gray-300 mx-3 sm:text-xl md:text-1xl mb-8">
-                            MS Contructor
-                        </p>
 
-                        <div className='mx-10 my-10 flex justify-center'>
-                            <div>
-                                <h1 className="text-white text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
-                                    Welcome to MS Construction & Supplier
-                                </h1>
-                                <p className="text-gray-300 text-lg sm:text-xl md:text-2xl mb-8">
-                                    <p>
-                                        We Build Your Dream!
-                                    </p>
-                                    <p>
-                                        Get Your Dream Home In Low Budget.
-                                    </p>
-                                </p>
-
-                            </div>
-                        </div>
-
-                        <div className="flex justify-center my-10">
-                            <Link to="https://forms.gle/y4bMXLjJGNADReZk7">
-                                <button>
-                                    <span className="text">contact</span>
-                                </button>
-                            </Link>
-                        </div>
-                        <section className=" bg-gray-900  py-3 my-3">
-                            <div className="container mx-auto ">
-
-                                <div className="grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                                    {properties.map((property) => (
-                                        <PropertyCard key={property.id} property={property} />
-                                    ))}
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                </div>
-                <div className="absolute inset-0 bg-opacity-50" style={{ backgroundImage: "url('https://wallsanddreams.com/images/testimonial-bg.jpg')" }}></div>
-            </header> */}
 
             <main className=" bg-gradient-to-b from-gray-900 via-white">
                 <div className="container mx-auto px-4">
