@@ -44,20 +44,31 @@ const HomePage = () => {
                 <div className="container relative mx-auto my-10 px-4">
 
                     <img
-                        className="bg-gradient-to-b from-blue-900 via-white to-green-900 rounded-full w-16 mr-2 mx-10"
-                        src="MSlogo.png"
+                        className="bg-gradient-to-b from-blue-900 via-white to-green-900 rounded-full w-16 h-16 mr-2 mx-10"
+                        style={{
+                            boxShadow: "0px 0px 10px 3px rgba(100, 150, 155, 0.5)",
+                            transform: "translateY(3px)",
+                        }}
+                        src="logo1.jpg"
                         alt="Logo"
                     />
-                    <span className="text-gray-300 mx-3 sm:text-xl md:text-1xl mb-8">
-                        MS Contructor
+
+                    <span
+                        style={{ textShadow: "1px 1px 1px red" }}
+                        className="text-gray-300 mx-3 sm:text-xl font-bold md:text-1xl mb-8">
+                        MS Constructor
                     </span>
 
                     <div className="mx-10 my-10 flex justify-center">
                         <div>
-                            <h1 className="text-white text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
+                            <h1
+                                style={{ textShadow: "1px 1px 10px green" }}
+                                className="text-white text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
                                 Welcome to MS Construction & Supplier
                             </h1>
-                            <div className="text-gray-300 text-lg sm:text-xl md:text-2xl mb-8">
+                            <div
+                                style={{ textShadow: "1px 1px 5px tomato" }}
+                                className="text-gray-100 text-lg sm:text-xl md:text-2xl mb-8">
                                 <p>We Build Your Dream!</p>
                                 <p>Get Your Dream Home In Low Budget.</p>
                             </div>
@@ -67,7 +78,9 @@ const HomePage = () => {
                     <div className="flex justify-center my-10">
                         <Link to="https://forms.gle/y4bMXLjJGNADReZk7">
                             <button>
-                                <span className="text">contact</span>
+                                <span
+                                    style={{ textShadow: "1px 1px 10px red" }}
+                                    className="text">contact</span>
                             </button>
                         </Link>
                     </div>
