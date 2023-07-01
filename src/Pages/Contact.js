@@ -24,7 +24,7 @@ const Contact = () => {
 
                             />
                         </div>
-                        <p><span className="text-blue-500">8271110801</span></p>
+                        <p><span className="text-blue-500">8102708008</span></p>
                         <p><span className="text-blue-500">msconstructor0634@gmail.com</span></p>
                         <p><span className="text-blue-500">sirkhatoli sadabahar chowk namkum, ranchi</span></p>
 
